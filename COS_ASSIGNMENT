@@ -1,0 +1,52 @@
+#TO CALCULATE TENSILE STRESS
+def a():
+    force = float(input('enter your force'))
+    area = float(input('enter your area'))
+    tensile_stress = force/area
+    print(tensile_stress)
+
+
+#TO CALCULATE THE DIFFERNCE OF TWO NUMBERS
+def b():
+        num1 = float(input('enter your num1'))
+        num2 = float(input('enter your num2'))
+        difference = num1 - num2
+        print(difference)
+
+#TO CALCULATE THE VELOCITY OF A BODY
+def c():
+    displacement = float(input('enter your displacement'))
+    time = float(input('enter your time'))
+    velocity = displacement/time
+    print(velocity)
+
+#TO CALCULATE AREA OF SQUARE
+def d():
+    length = float(input('enter your acceleration due to gravity'))
+
+    area_of_square = length^2
+    print(area_of_square)
+
+#TO CALCULATE THE area of a triangle
+def e():
+    base = float(input('enter your breadth'))
+    height = float(input('enter the height'))
+    area_of_a_triangle = (1/2)*base*height
+    print(area_of_a_triangle)
+
+def main():
+    user_input= input('enter the operation you would like to perform')
+    if user_input == "a":
+        a()
+    elif user_input == "b":
+        b()
+    elif user_input == "c":
+        c()
+    elif user_input == "d":
+        d()
+    elif user_input == "e":
+        e()
+    else:
+      print("invalid_input")
+if __name__ == '__main__':
+    main()
